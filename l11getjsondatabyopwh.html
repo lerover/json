@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+
+    <script type="text/javascript">
+        
+        const key = "ab97e13f76f324f780bf3244b9c4b672";
+        let uri = `https://api.openweathermap.org/data/2.5/weather?lat=12.506798613105152&lon=98.59791542957497&appid=ab97e13f76f324f780bf3244b9c4b672`;
+
+        const latitude = "12.506798613105152";
+        const longitude = "98.59791542957497";
+        
+        const xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET",uri,false);
+        xmlhttp.send();
+
+        let result;
+
+        if(xmlhttp.readyState === 4 && xmlhttp.status === 200){
+            result = xmlhttp.responseText;
+        };
+
+        result = JSON.parse(result);
+
+        console.log(result);
+        console.log(result.wind.speed)
+        console.log(result.name);
+
+
+    </script>
+</body>
+</html>

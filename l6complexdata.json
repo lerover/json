@@ -1,0 +1,58 @@
+{
+    "articles":[
+        {
+            "title":"This is new article 1",
+            "content":"lorem ipsum",
+            "rating":5
+        },
+        {
+            "title":"This is new article 3",
+            "content":"lorem ipsum",
+            "rating":5
+        },
+        {
+            "title":"This is new article 5",
+            "content":"lorem ipsum",
+            "rating":5
+        },
+        {
+            "title":"This is new article 7",
+            "content":"lorem ipsum",
+            "rating":5
+        }
+    ],
+    "sports":[
+        {
+            "title":"This is new sport 2",
+            "content":"lorem ipsum",
+            "rating":5
+        },
+        {
+            "title":"This is new sport 2",
+            "content":"lorem ipsum",
+            "rating":5
+        },
+        {
+            "title":"This is new sport 2",
+            "content":"lorem ipsum",
+            "rating":5
+        }
+    ],
+    "stories":[
+        {
+            "title":"This is new sport 2",
+            "content":"lorem ipsum",
+            "rating":5
+        },
+        {
+            "title":"This is new sport 2",
+            "content":"lorem ipsum",
+            "rating":5
+        },
+        {
+            "title":"This is new sport 2",
+            "content":"lorem ipsum",
+            "rating":5
+        }
+    ] 
+}

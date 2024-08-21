@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Object Literal & JSON Object</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        const employee = {
+            firstname:"Maung",
+            lastname:"Zaw",
+            "age":20,
+            "tax":true,
+            getname:function(){
+                return "I am "+this.firstname+" "+this.lastname;
+            }
+        };
+
+        console.log(employee);
+        console.log(employee.firstname,employee.lastname);
+        console.log(employee.age,employee.tax);
+        console.log(employee.getname());
+
+
+    </script>
+</body>
+</html>

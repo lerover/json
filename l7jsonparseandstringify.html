@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON.parse and JSON.stringify</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        const students = '{"firstname":"Kyaw","lastname":"Zayar","age":15}'; //must be single line, cuz it's string
+        
+        console.log(students);
+        console.log(typeof students);
+        studentOBJ = JSON.parse(students); //CHANGE string TO object JSON FORMAT 
+        console.log(typeof studentOBJ);
+        console.log(studentOBJ.firstname)
+
+        const staff = {
+            "firstname":"Hsu",
+            "lastname":"Myat",
+            "age":20
+        };
+
+        console.log(staff);
+        console.log(typeof staff);
+
+        const staffstr = JSON.stringify(staff); //change object to string using json stringify 
+
+        console.log(staffstr); 
+        console.log(typeof staffstr);
+        
+    </script>
+</body>
+</html>

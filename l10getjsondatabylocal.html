@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Request By AJAX</title>
+</head>
+<body>
+    
+
+    <script type="text/javascript">
+        
+        //AJAX (asynchronous Javascript and XML)
+
+        //CODE WORKS ON SYNCHRONOUS WAYS 
+        //SYNCHRONOUS WAY -> WATERFALL WAY 
+        let xmlhttp = new XMLHttpRequest(); 
+
+        //first step
+        xmlhttp.open("GET","l10sampledata.json",false); //three parameters -> GET for to pull, second parameter(uri), third parameter is 'false' as default
+
+        //second step
+        xmlhttp.send();
+
+        //console.log(xmlhttp); //in return object, readyState is 4, it means it works well.
+        
+        // if(xmlhttp.readyState === 4 && xmlhttp.status === 200){
+        //     //const result = xmlhttp;
+        //     //console.log(result);
+
+        //     const result = xmlhttp.responseText;
+        //     console.log(result)
+        // }
+
+        let result = xmlhttp.responseText;
+        result = JSON.parse(result);
+        console.log(result);
+
+        console.log(result.wind.speed);  //dot notation
+console.log(result.wind['speed']);  //bracket notation
+console.log(result['wind']['speed']); //bracket notation 
+
+
+    </script>
+</body>
+</html>
